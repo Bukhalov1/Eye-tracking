@@ -1,7 +1,7 @@
-import sqlite3
+﻿import sqlite3
 
 print('import DataBase...')
-conn = sqlite3.connect("EyeTrack.db")  # или :memory: чтобы сохранить в RAM
+conn = sqlite3.connect("EyeTrack.db")  
 cursor = conn.cursor()
 
 def addTable():

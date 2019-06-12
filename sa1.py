@@ -1,4 +1,4 @@
-import cv2
+﻿import cv2
 import numpy as np
 import dlib
 from math import hypot
@@ -57,7 +57,7 @@ def get_gaze_ratio(eye_points, facial_landmarks, frame, gray, Threshold, thrTurn
         sql.addCalibr(Threshold)
 
     if eyeReg == 1:
-        cv2.polylines(frame, [eye_region], True, (200, 50, 30), 2)  # обвести глаза по контуру
+        cv2.polylines(frame, [eye_region], True, (200, 50, 30), 2) 
         # cv2.polylines(frame, [np_aim], True, (200, 50, 30), 1)
         cv2.imshow('EyeRegion', frame)
 

@@ -1,4 +1,4 @@
-import tkinter as tk
+﻿import tkinter as tk
 import cv2
 import PIL.Image, PIL.ImageTk
 import sa1
@@ -26,10 +26,10 @@ class MainWindow(tk.Frame):
         print('loading camera...')
         self.vid = cv2.VideoCapture(1)
         print('initialization of the algorithm')
-        self.button = tk.Button(window, text="Выбрать порог бинаризации глаза", command=self.changeState)
+        self.button = tk.Button(window, text="Choose threshold", command=self.changeState)
         self.button.pack(side="top")
 
-        self.btn_snapshot = tk.Button(window, text="Поле глаз", width=20, command=self.EyeRegState)
+        self.btn_snapshot = tk.Button(window, text="Filed of the eyes", width=20, command=self.EyeRegState)
         self.btn_snapshot.pack(anchor=tk.CENTER, expand=True)
 
         self.Slider_1 = tk.Scale(window, length=300.0, from_=0, to=255,
